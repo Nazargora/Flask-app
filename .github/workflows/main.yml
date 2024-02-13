@@ -22,5 +22,6 @@ jobs:
           script: |
              sudo docker pull gora04/my-first-repo:latest
              sudo docker images
+             cd /home/nazar/pythonproject
              sudo docker-compose up -d
              
