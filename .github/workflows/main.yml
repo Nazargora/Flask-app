@@ -20,8 +20,8 @@ jobs:
           username: ${{ secrets.VM_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+             cd /home/nazar/pythonproject
              sudo docker pull gora04/my-first-repo:latest
              sudo docker images
-             cd /home/nazar/pythonproject
              sudo docker-compose up -d
              
