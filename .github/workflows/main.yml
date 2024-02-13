@@ -18,7 +18,7 @@ jobs:
         with:
           host: ${{ secrets.VM_HOST }}
           username: ${{ secrets.VM_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           scripts: |
              sudo docker pull docker push docker pull gora04/my-first-repo:latest
              sudo docker rm -f $(docker ps -aq)
