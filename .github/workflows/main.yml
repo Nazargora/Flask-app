@@ -21,6 +21,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           scripts: |
              sudo docker pull docker push docker pull gora04/my-first-repo:latest
-             sudo docker rm -f $(docker ps -aq)
              sudo docker images
              
